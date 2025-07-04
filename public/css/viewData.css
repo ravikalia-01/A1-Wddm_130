@@ -1,0 +1,51 @@
+/* Container for centering */
+.view-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Table styles */
+.view-data-container table {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* Equal column widths */
+}
+
+/* Header row with colspan */
+.view-data-container table tr:first-child th {
+  font-size: 1.3rem;
+  background-color: #c59700;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+}
+
+/* Column headers */
+.view-data-container th {
+  background-color: #ffd700;
+  color: #000;
+  font-weight: 600;
+  padding: 14px;
+  width: calc(100% / 7);
+  border: 1px solid #ccc;
+}
+
+/* Table cells */
+.view-data-container td {
+  padding: 14px;
+  text-align: left;
+  border: 1px solid #ccc;
+  width: calc(100% / 7);
+  word-wrap: break-word;
+}
+
+/* Alternating row color */
+.view-data-container tr:nth-child(even):not(:first-child) {
+  background-color: #f9f9f9;
+}

@@ -1,0 +1,87 @@
+
+/* Light theme for settings page */
+.settings-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.settings-container h1 {
+  text-align: center;
+  color: #c59700;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.setting-item label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.setting-item select,
+.setting-item input[type="checkbox"] {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.setting-item select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 140px;
+  transition: border-color 0.3s ease;
+}
+
+.setting-item select:focus {
+  outline: none;
+  border-color: #c59700;
+}
+
+.setting-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.save-settings {
+  display: block;
+  width: 100%;
+  background-color: #c59700;
+  border: none;
+  padding: 12px 0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-settings:hover {
+  background-color: #a47100;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .setting-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .setting-item select {
+    width: 100%;
+    margin-top: 8px;
+  }
+}

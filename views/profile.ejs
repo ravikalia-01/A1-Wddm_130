@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <%-include('partials/header', {page: 'profile'}) %>
+    <div class="profile-container">
+        <h1><%= title %></h1>
+        <div class="profile-details">
+            <img src="<%= Image %>" alt="Profile Image" class="profile-image">
+            <p><strong>Name:</strong> <%= name %></p>
+            <p><strong>Email:</strong> <%= email %></p>
+            <p><strong>Phone:</strong> <%= phone %></p>
+            <p><strong>Address:</strong> <%= address %></p>
+            <p><strong>Message:</strong> <%= message %></p>
+        </div>
+    </div>
+    <%-include('partials/footer') %>
+</body>
+</html>

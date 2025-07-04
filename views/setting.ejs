@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Setting</title>
+</head>
+<body>
+    <%-include('partials/header', {page: 'setting'}) %>
+    <div class="settings-container">
+        <h1>Settings</h1>
+        <div class="setting-item">
+            <label for="theme">Theme:</label>
+            <select id="theme" name="theme">
+                <option value="light">Light Mode</option>
+                <option value="dark">Dark Mode</option>
+            </select>
+        </div>
+        <div class="setting-item">
+            <label for="notifications">Notifications:</label>
+            <input type="checkbox" id="notifications" name="notifications" checked>
+        </div>
+        <div class="setting-item">
+            <label for="privacy">Privacy:</label>
+            <select id="privacy" name="privacy">
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+            </select>
+        </div>
+        <button type="submit" class="save-settings">Save Settings</button>
+    </div>
+    <%-include('partials/footer') %>
+</body>
+</html>

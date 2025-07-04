@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ /* Header Styles - Slightly Darker Tone */
+header {
+  background-color: #e0e0e0; /* Slightly darker than #f5f5f5 */
+  padding: 1rem 2rem;
+  color: #222; /* Deep gray text */
+  border-bottom: 1px solid #bbb;
+}
+
+/* Logo Styles */
+.logo {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 1.5rem;
+}
+
+/* Nav Container */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Nav Link Styles */
+nav a {
+  color: #222;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e2ad00ee; /* Dark gold on hover */
+  color: #fff;
+}
+
+/* Active Link Highlight */
+nav a.active {
+  background-color: #c59700; /* Bright gold for active */
+  color: #000;
+  font-weight: bold;
+}
+
+/* Horizontal Line */
+nav hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 0.5rem;
+}
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #e0e0e0; /* Matches header tone */
+  color: #222;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.footer-links li {
+  margin: 0.3rem 0;
+}
+
