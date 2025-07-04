@@ -15,7 +15,7 @@ app.use((req, res, next) => {
     next()
 })
  
-const HTTP_PORT = process.env.PORT || 8088
+const HTTP_PORT = process.env.PORT || 8085
  
 //using EJS template engine, you have to say render
 //for it to render the home.ejs
